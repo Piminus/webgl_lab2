@@ -27,5 +27,5 @@ fs.readFile('./lab2/index.html', function (err, html) {
             response.end();
         }
 
-    }).listen(8080);
+    }).listen(process.env.PORT || 8080);
 });
